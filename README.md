@@ -1,6 +1,4 @@
-# pertemps-profile
-
-> Front-end for Pertemps Profile registration SPA
+# Front-end for Pertemps Profile registration SPA - Exposure London
 
 Author: Rob Bradley
 
