@@ -6,7 +6,7 @@ Exposure, London — Front End Developer
 
 (Contract) OCT 2019
 
-# Tech Stack
+## Tech Stack
 
 Vue / Nuxt / Typescript / JS / CSS
 
