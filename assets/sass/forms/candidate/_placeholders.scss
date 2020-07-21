@@ -1,0 +1,23 @@
+// Reset default input styles
+%input-reset {
+  appearance: none;
+  background-color: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+%danger-stripes {
+  $yellow: rgba(yellow, 0.1);
+  $black: rgba(black, 0.1);
+
+  padding: 1rem;
+  background: repeating-linear-gradient(
+    45deg,
+    $yellow,
+    $yellow 10px,
+    $black 10px,
+    $black 20px
+  );
+}

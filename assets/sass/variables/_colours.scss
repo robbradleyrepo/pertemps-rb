@@ -1,0 +1,47 @@
+// Theme colours
+$p-light-blue: #6dabe4;
+$p-dark-blue: #001a71;
+
+$p-red: #da291c;
+$p-red--dark: adjust-color(#da291c, $lightness: -5%);
+
+$p-aqua: #00b2a9;
+$p-aqua--dark: adjust-color(#00b2a9, $lightness: -5%);
+
+$p-pink: #ce0058;
+$p-pink--dark: adjust-color(#ce0058, $lightness: -5%);
+
+$p-orange: #d86018;
+$p-orange--dark: adjust-color(#d86018, $lightness: -5%);
+
+$p-green: #c4d614;
+$p-green--dark: adjust-color(#c4d614, $lightness: -5%);
+
+$p-yellow: #ffb514;
+$p-yellow--dark: adjust-color(#ffb514, $lightness: -5%);
+
+$p-purple: #8031a7;
+$p-purple--dark: adjust-color(#8031a7, $lightness: -5%);
+
+// Blacks, greys and whites
+$p-white: #ffffff;
+$p-offwhite: #eaeaea;
+
+$p-black: #000;
+$p-offblack: #28404e;
+$p-mineshaft: #262626;
+
+$p-grey-wildsand: #f5f5f5;
+$p-grey-iron: #d6d6d6;
+$p-grey-alto: #d9d9d9;
+$p-grey-lolly: #b8b8b8;
+$p-grey-thunder: #4c4c4c;
+$p-grey-baltic: #3d3d3d;
+$p-grey-concrete: #f3f3f3;
+$p-grey-boulder: #7d7d7d;
+
+$c-green: rgba(green, 0.2);
+$c-red: rgba(red, 0.2);
+
+// Text colours
+$text-dark: $p-grey-thunder;

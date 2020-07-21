@@ -1,0 +1,96 @@
+.button {
+  appearance: none;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: currentColor;
+  border-width: 1px;
+  border-style: solid;
+  border-color: currentColor;
+  background-color: transparent;
+  text-decoration: none;
+  height: 3em;
+  padding: 0.25em 1.5em;
+  border-radius: 1.5em;
+  cursor: pointer;
+
+  &:not(:disabled, .button--active) {
+    &:hover,
+    &:focus {
+      background-color: rgba(black, 0.05);
+    }
+
+    &:focus {
+      outline: none;
+      border-style: dashed;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    background-color: $p-pink;
+    border-color: $p-pink;
+    color: #fff;
+
+    &:not(:disabled, .button--active) {
+      &:hover,
+      &:focus {
+        background-color: $p-pink--dark;
+        border-color: $p-pink--dark;
+        color: #fff;
+      }
+
+      &:focus {
+        border-style: dashed;
+        border-color: #fff;
+      }
+    }
+  }
+
+  &--dark {
+    background-color: $text-dark;
+    border-color: $text-dark;
+    color: #fff;
+
+    &:not(:disabled, .button--active) {
+      &:hover,
+      &:focus {
+        background-color: $p-grey-baltic;
+        border-color: $p-grey-baltic;
+        color: #fff;
+      }
+
+      &:focus {
+        border-style: dashed;
+        border-color: #fff;
+      }
+    }
+  }
+
+  &--link {
+    border-color: transparent;
+    color: currentColor;
+
+    &:not(:disabled, .button--active) {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--inline {
+    height: auto;
+    padding: 0;
+  }
+
+  &--square {
+    border-radius: 0.3em;
+  }
+}

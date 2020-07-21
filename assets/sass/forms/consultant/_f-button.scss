@@ -1,0 +1,21 @@
+.f-forms {
+    // BUTTONS
+    input[type=submit],
+    .button {
+        padding: 20px 70px;
+        background: $p-aqua;
+        @include border-radius(4px);
+        @include transition(0.3s ease-in-out);
+        color: $p-white;
+        border: 0;
+        opacity: 1;
+        height: auto;
+        cursor: pointer;
+        
+        &:hover, &:focus, &:active {
+            @include transition(0.3s ease-in-out);
+            opacity: 0.8;
+            background: $p-aqua;
+        }	
+    }
+}

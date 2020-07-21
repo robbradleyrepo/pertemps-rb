@@ -1,0 +1,36 @@
+// -------------------------
+// Fallback families
+// -------------------------
+$font-family-fallback-serif: 'serif';
+$font-family-fallback-sans-serif: 'sans-serif';
+
+// -------------------------
+// System families
+// -------------------------
+$font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+// -------------------------
+// Custom families
+// -------------------------
+$font-family-base: 'sofia-pro', $font-family-system,
+  $font-family-fallback-sans-serif;
+
+// -------------------------
+// Weights
+// -------------------------
+$font-weight-light: 300; // Sofia Pro Light
+$font-weight-normal: 400; // Sofia Pro regular
+$font-weight-bold: 700; // Sofia Pro Bold
+
+// -------------------------
+// Styles
+// -------------------------
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+// -------------------------
+// Sizes
+// -------------------------
+$font-size-base: 16px;

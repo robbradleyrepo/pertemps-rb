@@ -1,0 +1,116 @@
+.input-wrapper {
+  position: relative;
+}
+
+.input {
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus,
+  &:placeholder-shown,
+  &--not-empty {
+    + .smart-label {
+      font-size: 0.8em;
+      left: 0;
+      top: 0;
+      transform: translateY(-25%);
+    }
+  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='tel'],
+input[type='date'] {
+  &.input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    height: 2.25em;
+    padding: 0.375em 0.625em 0;
+    border: none;
+    border-bottom: 3px solid currentColor;
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  &.input--no-h-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+select {
+  &.input {
+    border: 3px solid $text-dark;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    width: 100%;
+    font-weight: $font-weight-bold;
+
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 $text-dark;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $p-offwhite;
+    }
+
+    &:focus {
+      border-style: double;
+    }
+  }
+}
+
+.static-label,
+.smart-label {
+  color: $p-grey-lolly;
+  font-size: 1em;
+  width: 100%;
+  font-weight: $font-weight-light;
+}
+
+.smart-label {
+  position: absolute;
+  left: 0;
+  top: 1.75em;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 0;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.static-label {
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  &.input {
+    position: relative;
+    z-index: 1;
+
+    + .smart-label {
+      left: 1.5em;
+      width: calc(100% - 2.5em - 6px);
+    }
+
+    &:focus,
+    &:placeholder-shown,
+    &--not-empty {
+      + .smart-label {
+        top: 0.75em;
+        left: 1.5em;
+      }
+    }
+  }
+}
